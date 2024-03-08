@@ -3,7 +3,7 @@ import cors from 'cors'
 import connectToMongo from './config/db.js';
 import userRoutes from './routes/user.js';
 const app = express();
-const port = process.env.PORT || 6000;
+const port =5000;
 connectToMongo();    
 
 // apply middleware for posting the data
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send(`Hello from backend index.js and port number ${port}`);
+  res.send(`Hello from backend index.js and port number ${port} using github je`);
 });
 
 //routes
@@ -22,5 +22,5 @@ app.use('/api/v1', userRoutes);
 
 
 app.listen(port, () => {
-  console.log(`Server is running on port number ${port} `);
+  console.log(`Server is running on port number ${port} using github je `);
 });
