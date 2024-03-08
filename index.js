@@ -22,5 +22,5 @@ app.use('/api/v1', userRoutes);
 
 
 app.listen(port, () => {
-  console.log(`Server is running on port number ${port} Harshit Jajoria `);
+  console.log(`Server is running on port number ${port} Harshit `);
 });
