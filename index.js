@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send(`Hello from backend index.js and port number ${port}  Harshit   `);
+  res.send(`Hello from backend index.js and port number ${port}  Harshit Jajoria   `);
 });
 
 //routes
@@ -22,5 +22,5 @@ app.use('/api/v1', userRoutes);
 
 
 app.listen(port, () => {
-  console.log(`Server is running on port number ${port}  Harshit  `);
+  console.log(`Server is running on port number ${port}  Harshit Jajoria `);
 });
