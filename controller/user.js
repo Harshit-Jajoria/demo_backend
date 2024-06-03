@@ -48,7 +48,7 @@ class userController {
         console.log('Get Request -- Single User');
         return res.status(200).json(getSingleData);
       } else {
-        return res.status(400).json({ message: ' id not found' });
+        return res.status(400).json({ message: ' id not ' });
       }
     } catch (error) {
       return res.status(200).json(error);
