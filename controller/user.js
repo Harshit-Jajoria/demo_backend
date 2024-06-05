@@ -26,7 +26,7 @@ class userController {
         const saved_user = await newUser.save();
         if (saved_user) {
           console.log('Post Request -New user is created ');
-          //console.log(saved_user);
+          //console.log(saved_urser);
 
           return res.status(201).json(saved_user);
         } else {
