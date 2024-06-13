@@ -11,7 +11,7 @@ class userController {
     } catch (error) {
       return res.status(200).json(error);
     }
-  };
+  }; 
 
   static createUser = async (req, res) => {
     const { name, email, age } = req.body;
